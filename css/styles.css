@@ -1,0 +1,89 @@
+body {
+	margin: 0 auto;
+	font: 12px/1.5 sans-serif;
+	color: #000;
+	background: transparent;
+}
+
+figure {
+	width: 224px;
+}
+
+figcaption {
+	font-style: italic;
+	clear: left;
+	text-align: center;
+	width: 224px;
+	top: 270px;
+	left: 12px;
+	position: absolute;
+	font-size: 19px;
+}
+
+.SlidingPuzzle {
+	background: #000;
+	border-radius: 6px;
+	height: 204px;
+	left: 32px;
+	top: 32px;
+	padding: 9px 10px 11px 10px;
+	position:absolute;
+	width: 204px;
+}
+
+.SlidingPuzzle li.Tile {
+	background-color: #fff;
+	border: 6px outset #CCCCCC;
+	cursor: pointer;
+	font-size: 32px;
+	height: 56px;
+	list-style: none;
+	line-height: 58px;
+	margin: 0;
+	position: absolute;
+	text-align: center;
+	width: 56px;
+}
+
+
+
+.EmptyTile {
+	list-style: none;
+	position: absolute;
+}
+
+@media screen and (device-height: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+	figcaption {
+		width: 224px;
+		top: 257px;
+		left: 11px;
+		font-size: 19px;
+	}
+	
+	.SlidingPuzzle {
+		border-radius: 8px;
+		box-shadow: 1px 0px 0px 1px #ccc;
+		border-bottom: -webkit-linear-gradient(top, #131313 0%,#000000 49%,#2c2c2c 52%,#4c4c4c 100%);
+		height: 408px;
+		left: -81px;
+		top: -92px;
+		padding: 19px;
+		width: 408px;
+		-webkit-transform:scale(0.5);  /*for a 1px shadow in retina display.*/
+	}
+	
+	.SlidingPuzzle li.Tile {
+		border: 8px outset #CCCCCC;
+		box-shadow: 0px 0px 1px 1px #ccc;
+		font-size: 64px;
+		height: 118px;
+		line-height: 118px;
+		width: 116px;
+	}
+	
+	.SlidingPuzzle li.Tile.Tile1, .SlidingPuzzle li.Tile.Tile2, .SlidingPuzzle li.Tile.Tile3, .SlidingPuzzle li.Tile.Tile4, .SlidingPuzzle li.Tile.Tile5, 
+	.SlidingPuzzle li.Tile.Tile6, .SlidingPuzzle li.Tile.Tile7, .SlidingPuzzle li.Tile.Tile8 {
+		margin: 0px 4px 3px 0px;
+	}
+}
